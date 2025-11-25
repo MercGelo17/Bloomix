@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.example.bloomix"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bloomix">
+
+        <!-- Launch Screen -->
+        <activity
+            android:name=".SignUp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LogIn" android:exported="true" />
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".CalendarActivity" android:exported="true" />
+        <activity android:name=".EmotionActivity" android:exported="true" />
+
+        <!-- Newly added activities -->
+        <activity android:name=".JournalActivity" android:exported="true" />
+        <activity android:name=".SharedEmotionsActivity" android:exported="true" />
+
+        <!-- Your Flower screen -->
+        <activity android:name=".FlowerActivity" android:exported="true" />
+
+        <activity android:name=".FlowerResultActivity" android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>
+
